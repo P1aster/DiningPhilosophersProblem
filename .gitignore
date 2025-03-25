@@ -12,12 +12,6 @@ cmake_install.cmake
 install_manifest.txt
 CTestTestfile.cmake
 
-# Ignore generated Makefiles and Ninja files
-Makefile
-*.ninja
-*.ninja_deps
-*.ninja_log
-
 # Ignore compiled object files
 *.o
 *.obj

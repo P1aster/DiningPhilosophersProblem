@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 {
 
 	if (argc != 7) {
-		std::cerr << "Usage: " << argv[0] << " <PhilosopherNum> <min_thinking_time> <max_thinking_time> <min_eating_time> <max_eating_time> <cicles>" << std::endl;
+		std::cerr << "Usage: " << argv[0] << " <unsigned_int: PhilosopherNum> <unsigned_int: min_thinking_time> <unsigned_int: max_thinking_time> <unsigned_int: min_eating_time> <unsigned_int: max_eating_time> <unsigned_int: cicles>" << std::endl;
 		return 1;
 	}
 
