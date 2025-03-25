@@ -47,6 +47,28 @@ if a philosopher is eating and one of his neighbors is requesting the forks, all
 other philosophers must wait until this request has been fulfilled even if forks
 for them are still available.
 
+
+## Key points
+
+1. **Threads and What They Represent**
+     * In this program, each thread represents a philosopher that is in one of two posibble states, he can eat or think.
+     * The threads simulate the behavior of philosophers competing for shared resources (forks) to eat.
+2. **Critical Sections and Their Solution**
+     * Critical Sections are parts of the code where shared resources (forks) are accessed and modified. In this program, the critical sections are:
+
+       * Picking up forks (acquiring locks on the forks).
+       * Releasing forks (releasing locks on the forks).
+
+   If not handled properly, critical sections can lead to ***deadlock*** (where all philosophers are stuck waiting for forks) or ***starvation*** (where some philosophers never get a chance to eat).
+
+   * Solution: 
+     * **Waiter**: A central authority (Waiter class) ensures that neighbour philosophers cannot eat simultaneously. This prevents ***deadlock*** and ***starvation***.
+      * **Condition Variable**: Philosophers wait for permission from the waiter before attempting to pick up forks. The waiter uses a condition variable to notify philosophers when it’s safe to proceed.
+     * **Mutexes**: Each fork is protected by a mutex to ensure exclusive access during critical sections.
+
+       
+
+
 ## Main Issues
 
 1. **Mutex and Lock**:  
