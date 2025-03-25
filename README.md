@@ -66,9 +66,25 @@ for them are still available.
       * **Condition Variable**: Philosophers wait for permission from the waiter before attempting to pick up forks. The waiter uses a condition variable to notify philosophers when it’s safe to proceed.
      * **Mutexes**: Each fork is protected by a mutex to ensure exclusive access during critical sections.
 
-       
+## Run programme
+   Using makefile get to sub directory `/DiningPhilosophersProblem` and just type ``make``, It will create an executable file in the same directory.
+   Executable file accept 6 arguments separated by space:
 
+   * number of philosophers: `unsigned int`
+   * min thinking time: `unsigned int` [ms]
+   * max thinking time: `unsigned int` [ms]
+   * min eating time: `unsigned int` [ms]
+   * max eating time: `unsigned int` [ms]
+   * number of cycles for philosopher: `unsigned int`
 
+   
+   Example:
+   ```
+   ./DiningPhilosophers 5 100 1000 100 1000 10
+   ```
+   
+
+     
 ## Main Issues
 
 1. **Mutex and Lock**:  
