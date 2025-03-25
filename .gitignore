@@ -1,12 +1,81 @@
-CMakeLists.txt.user
+# Ignore build directories
+/build/
+/out/
+/bin/
+/lib/
+
+# Ignore CMake generated files
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
+CMakeScripts/
 cmake_install.cmake
 install_manifest.txt
-compile_commands.json
 CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
+
+# Ignore generated Makefiles and Ninja files
+Makefile
+*.ninja
+*.ninja_deps
+*.ninja_log
+
+# Ignore compiled object files
+*.o
+*.obj
+*.lo
+*.ilk
+*.pdb
+
+# Ignore compiled binaries
+*.exe
+*.out
+*.app
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Ignore IDE-specific files
+.vscode/
+.vs/
+.idea/
+*.sln
+*.vcxproj*
+*.vcproj
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.db
+*.opendb
+
+# Ignore temporary files
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Ignore logs and test results
+*.log
+*.tlog
+*.lastbuildstate
+TestResults/
+
+# Ignore dependency files
+*.d
+*.d.*
+
+# Ignore coverage files
+*.gcno
+*.gcda
+*.gcov
+
+# Ignore package managers
+conanbuildinfo.cmake
+conaninfo.txt
+conan_imports_*/
+
+# Ignore local development files
+.env
+.local
